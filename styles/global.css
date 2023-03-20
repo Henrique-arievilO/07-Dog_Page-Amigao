@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --primaryFont: 'Roboto', sans-serif;
+    --secondaryFont: 'Urbanist', sans-serif;
+
+    --primaryColor: #544768;
+    --secondaryColor: #A0AAEB;
+    --tertiaryColor: #654768;
+    --lightColor: #CBC4D7;
+    --darkColor: #1C1722;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* CLASSES UTILITÁRIAS */
+
+/* CONTAINERS */
+
+.bg-container{
+    max-width: 1400px;
+    width: 100%;
+    padding: 1rem;
+    margin: auto;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.simple-container{
+    width: 100%;
+    padding: 1rem;
+}
+/* TIPOGRAFIAS */
+.font1-xs{
+    font-size: .75rem;
+    font-family: var(--primaryFont);
+}
+.font1-s{
+    font-size: 1rem;
+    font-family: var(--primaryFont);
+}
+.font1-m{
+    font-size: 1.5rem;
+    font-family: var(--primaryFont);
+}
+.font1-l{
+    font-size: 2.5rem;
+    font-family: var(--primaryFont);
+}
+.font1-xl{
+    font-size: 4.5rem;
+    font-family: var(--primaryFont);
+}
+.font2-xs{
+    font-size: .75rem;
+    font-family: var(--secondaryFont);
+}
+.font2-s{
+    font-size: 1rem;
+    font-family: var(--secondaryFont);
+}
+.font2-m{
+    font-size: 1.5rem;
+    font-family: var(--secondaryFont);
+}
+.font2-l{
+    font-size: 2.5rem;
+    font-family: var(--secondaryFont);
+}
+.font2-xl{
+    font-size: 4.5rem;
+    font-family: var(--secondaryFont);
+}
