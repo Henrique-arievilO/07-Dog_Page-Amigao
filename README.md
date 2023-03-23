@@ -14,3 +14,6 @@
 Recursos aplicados:</i>
 
 - Pseudo Seletores
+- Novas propriedades de CSS
+
+<i>Obs: Futuramente será implementado um carrossel para a sessão Adote</i>
