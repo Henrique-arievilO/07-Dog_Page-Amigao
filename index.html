@@ -21,13 +21,13 @@
   </head>
   <body>
     <header class="bg-container flex-container">
-      <h1 class="font1-xl">Amigão</h1>
+      <h1 class="font1-xl" id="home">Amigão</h1>
       <nav>
         <ul class="flex-container navbar">
-          <li><a href="home" class="font1-s">Home</a></li>
-          <li><a href="about" class="font1-s">Sobre</a></li>
-          <li><a href="adopt" class="font1-s">Adote</a></li>
-          <li><a href="voluntary" class="font1-s">Seja Voluntário</a></li>
+          <li><a href="#home" class="font1-s">Home</a></li>
+          <li><a href="#about" class="font1-s">Sobre</a></li>
+          <li><a href="#adopt" class="font1-s">Adote</a></li>
+          <li><a href="#voluntary" class="font1-s">Seja Voluntário</a></li>
         </ul>
       </nav>
     </header>
@@ -39,7 +39,7 @@
           <button class="font1-s">Adotar um cachorrinho</button>
         </div>
       </section>
-      <section class="simple-container" id="adopt">
+      <section class="simple-container" id="about">
         <h2 class="font1-m">Adote um amigo</h2>
         <p class="font2-s">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat omnis
@@ -65,89 +65,96 @@
         <button class="font1-s">Seja Voluntário</button>
         <div class="circle"></div>
       </section>
-      <section class="adopt">
+      <section class="adopt" id="adopt">
         <h2 class="font1-m">Adote</h2>
-        <div class="slide-container flex-container" id="card-container">
-          <div class="card" id="item1">
-            <figure>
-              <img
-                src="./assets/image/Luna.png"
-                alt="Cadelinha Luna, 5 meses."
-              />
-            </figure>
-            <h3 class="font1-s">Luna</h3>
-            <p class="font2-s">5 meses</p>
-            <button class="font1-xs">Adotar</button>
-          </div>
-          <div class="card" id="item2">
-            <figure>
-              <img
-                src="./assets/image/Duque.png"
-                alt="Cachorrinho Duque, 2 anos."
-              />
-            </figure>
-            <h3 class="font1-s">Duque</h3>
-            <p class="font2-s">2 anos</p>
-            <button class="font1-xs">Adotar</button>
-          </div>
-          <div class="card" id="item3">
-            <figure>
-              <img
-                src="./assets/image/Perola.png"
-                alt="Cadelinha Pérola, 1 ano e 4 meses."
-              />
-            </figure>
-            <h3 class="font1-s">Pérola</h3>
-            <p class="font2-s">1 ano e 4 meses</p>
-            <button class="font1-xs">Adotar</button>
-          </div>
-          <div class="card" id="item4">
-            <figure>
-              <img
-                src="./assets/image/Rex.png"
-                alt="Cachorrinho Rex, 3 meses."
-              />
-            </figure>
-            <h3 class="font1-s">Rex</h3>
-            <p class="font2-s">3 meses</p>
-            <button class="font1-xs">Adotar</button>
-          </div>
-          <div class="card" id="item1">
-            <figure>
-              <img
-                src="./assets/image/Thor.png"
-                alt="Cachorrinho Thor, 1 ano."
-              />
-            </figure>
-            <h3 class="font1-s">Thor</h3>
-            <p class="font2-s">1 ano</p>
-            <button class="font1-xs">Adotar</button>
+        <div class="carousel">
+          <div class="carousel-container" id="cards">
+            <div class="card" id="item">
+              <figure>
+                <img
+                  src="./assets/image/Luna.png"
+                  alt="Cadelinha Luna, 5 meses."
+                />
+              </figure>
+              <h3 class="font1-s">Luna</h3>
+              <p class="font2-s">5 meses</p>
+              <button class="font1-xs">Adotar</button>
+            </div>
+            <div class="card" id="item">
+              <figure>
+                <img
+                  src="./assets/image/Duque.png"
+                  alt="Cachorrinho Duque, 2 anos."
+                />
+              </figure>
+              <h3 class="font1-s">Duque</h3>
+              <p class="font2-s">2 anos</p>
+              <button class="font1-xs">Adotar</button>
+            </div>
+            <div class="card" id="item">
+              <figure>
+                <img
+                  src="./assets/image/Perola.png"
+                  alt="Cadelinha Pérola, 1 ano e 4 meses."
+                />
+              </figure>
+              <h3 class="font1-s">Pérola</h3>
+              <p class="font2-s">1 ano e 4 meses</p>
+              <button class="font1-xs">Adotar</button>
+            </div>
+            <div class="card" id="item">
+              <figure>
+                <img
+                  src="./assets/image/Rex.png"
+                  alt="Cachorrinho Rex, 3 meses."
+                />
+              </figure>
+              <h3 class="font1-s">Rex</h3>
+              <p class="font2-s">3 meses</p>
+              <button class="font1-xs">Adotar</button>
+            </div>
+            <div class="card" id="item">
+              <figure>
+                <img
+                  src="./assets/image/Thor.png"
+                  alt="Cachorrinho Thor, 1 ano."
+                />
+              </figure>
+              <h3 class="font1-s">Thor</h3>
+              <p class="font2-s">1 ano</p>
+              <button class="font1-xs">Adotar</button>
+            </div>
           </div>
         </div>
         <a href="/" class="font1-s">Veja mais</a>
       </section>
     </main>
     <footer class="bg-container">
-      <a href="/" class="font1-s">Amigão</a>
-      <div class="network">
-        <a href="facebook.com"
-          ><img src="./assets/image/square-facebook.svg" alt="facebook" /></a
-        ><a href="instagram.com"
-          ><img src="./assets/image/square-instagram.svg" alt="instagram" /></a
-        ><a href="gmail.com"
-          ><img src="./assets/image/square-email.svg" alt="gmail"
-        /></a>
+      <div class="footer-container">
+        <a href="/" class="font1-s">Amigão</a>
+        <div class="network">
+          <a href="facebook.com"
+            ><img src="./assets/image/square-facebook.svg" alt="facebook" /></a
+          ><a href="instagram.com"
+            ><img
+              src="./assets/image/square-instagram.svg"
+              alt="instagram" /></a
+          ><a href="gmail.com"
+            ><img src="./assets/image/square-email.svg" alt="gmail"
+          /></a>
+        </div>
+        <p class="font2-s">Rua Rodrigues Alves, nº 5</p>
+        <p class="font2-s">Rio de Janeiro, Rio de Janeiro</p>
       </div>
-      <p class="font2-s">Rua Rodrigues Alves, nº 5</p>
-      <p class="font2-s">Rio de Janeiro, Rio de Janeiro</p>
       <nav>
         <ul>
-          <li><a href="home" class="font1-s">Home</a></li>
-          <li><a href="about" class="font1-s">Sobre</a></li>
-          <li><a href="adopt" class="font1-s">Adote</a></li>
-          <li><a href="voluntary" class="font1-s">Seja Voluntário</a></li>
+          <li><a href="#home" class="font1-s">Home</a></li>
+          <li><a href="#about" class="font1-s">Sobre</a></li>
+          <li><a href="#adopt" class="font1-s">Adote</a></li>
+          <li><a href="#voluntary" class="font1-s">Seja Voluntário</a></li>
         </ul>
       </nav>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

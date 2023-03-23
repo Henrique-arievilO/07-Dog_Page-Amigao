@@ -13,8 +13,4 @@
 <i>Recriando o design de uma página de adoção de cães.
 Recursos aplicados:</i>
 
-- Display Flex
-- Display Grid
-- Variáveis CSS
-- Multi seletores
-- Classes utilitárias
+- Pseudo Seletores

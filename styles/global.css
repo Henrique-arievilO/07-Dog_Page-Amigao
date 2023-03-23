@@ -15,7 +15,10 @@
     --lightColor: #fff;
     --darkColor: #000;
 }
-
+body{
+    background: var(--darkColor);
+    scroll-behavior: smooth;
+}
 img{
     width: 100%;
     height: 100%;
@@ -26,6 +29,16 @@ a{
 }
 button{
     box-shadow: 2px 2px 5px #000;
+}
+::-webkit-scrollbar{
+    background-color: #000;
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    width: 8px;
+    border: 3.5px solid #000;
+    border-radius: 8px;
+    background-color: var(--primaryColor);
 }
 /* CLASSES UTILITÁRIAS */
 

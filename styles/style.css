@@ -6,7 +6,7 @@ footer{
     background: var(--darkColor);
     color: var(--lightColor);
 }
-header .navbar{
+.navbar{
     gap: 20px;
 }
 .navbar a{
@@ -67,32 +67,47 @@ main p{
     width: fit-content;
     margin-bottom: 1rem;
 }
-#card-container{
+
+.carousel{
+    width: 100%;
+    margin: 0 auto 1rem;
+    border-radius: 4px;
+}
+.carousel-container{
+    width: 100%;
+    transition: transform .5s ease-in-out;
+    transform: translateX(0);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
-    gap: 40px;
-    overflow: hidden;
-    margin-bottom: 2rem;
 }
 .card{
     width: 200px;
-    text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 1rem;
+    gap: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 4px #000;
     background: var(--tertiaryColor);
     padding-bottom: 10px;
-    box-shadow: 2px 2px 4px #000;
     border-radius: 4px;
-    overflow: hidden;
 }
+
 .card:hover{
     background: #3b3b3b;
+}
+.card p{
+    width: 100% !important;
 }
 .card figure{
     width: 200px;
     height: 250px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    overflow: hidden;
 }
 .card button{
     width: fit-content;
@@ -127,4 +142,62 @@ main p{
     width: 30px;
     filter: invert(1);
     margin-right: 1rem;
+    transition: .3s;
+}
+.network a:hover img{
+    transform: rotate(10deg);
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer nav a:hover{
+    text-decoration: underline;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 900px){
+    header{
+        flex-direction: column;
+    }
+    #adopt p{
+        width: 80%;
+        margin: 0 auto 1rem;
+    }
+}
+@media (max-width: 600px){
+    .navbar{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .navbar li{
+        width: 100vw;
+        text-align: center;
+    }
+    .navbar li:hover{
+        background-color: var(--tertiaryColor);
+    }
+    .navbar a::after{
+        display: none;
+    }
+    footer{
+        flex-direction: column;
+        gap: 40px;
+    }
+    footer li{
+        text-align: center;
+    }
+}
+@media (max-width: 480px){
+    .btn-container{
+        flex-direction: column;
+    }
+    .font1-xl{
+        font-size: 3.5rem;
+    }
 }
