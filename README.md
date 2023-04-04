@@ -10,10 +10,9 @@
     <a href="https://www.linkedin.com/in/wanderson-henrique-oliveira-74b718235/" alt="Linkedin"><img src="https://img.shields.io/badge/-Wanderson Henrique-indigo?style=flat&logo=Linkedin&logoColor=white"></a>
 </div><br>
 
-<i>Recriando o design de uma página de adoção de cães.
+<i>Recriando o design de uma página de adoção de cães. Buscando uma otimização do código, os cards inicialmente feitos individualmente, foram substituídos por um array com objetos renderizados em forma de cards.
 Recursos aplicados:</i>
 
 - Pseudo Seletores
 - Novas propriedades de CSS
-
-<i>Obs: Futuramente será implementado um carrossel para a sessão Adote</i>
+- Manipulação de DOM
