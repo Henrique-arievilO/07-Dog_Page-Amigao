@@ -73,12 +73,13 @@ main p{
     margin: 0 auto 1rem;
     border-radius: 4px;
 }
-.carousel-container{
+.dogList{
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 .card{
     width: 200px;
